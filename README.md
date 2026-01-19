@@ -6,7 +6,7 @@
 
 ## 在线访问
 
-- **主页**: https://612geoteam.github.io/homepage/
+- **主页**: https://612geoteam.github.io/
 - **30天GEO冲刺**: https://612geoteam.github.io/geo/
 
 ## 612的含义
