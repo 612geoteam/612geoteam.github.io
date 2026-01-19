@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- 背景圆形 -->
+  <circle cx="200" cy="200" r="190" fill="#1a365d" stroke="#2c5282" stroke-width="4"/>
+
+  <!-- 地球网格 -->
+  <g stroke="#4299e1" stroke-width="1.5" fill="none" opacity="0.6">
+    <!-- 经线 -->
+    <ellipse cx="200" cy="200" rx="80" ry="150"/>
+    <ellipse cx="200" cy="200" rx="40" ry="150"/>
+    <ellipse cx="200" cy="200" rx="150" ry="80"/>
+    <line x1="200" y1="50" x2="200" y2="350" stroke-width="2"/>
+    <!-- 纬线 -->
+    <line x1="50" y1="200" x2="350" y2="200" stroke-width="2"/>
+  </g>
+
+  <!-- 六大角色 - 六边形排列的圆点 -->
+  <g>
+    <circle cx="200" cy="80" r="12" fill="#48bb78"/>
+    <circle cx="285" cy="140" r="12" fill="#4299e1"/>
+    <circle cx="285" cy="260" r="12" fill="#ed8936"/>
+    <circle cx="200" cy="320" r="12" fill="#9f7aea"/>
+    <circle cx="115" cy="260" r="12" fill="#f56565"/>
+    <circle cx="115" cy="140" r="12" fill="#ecc94b"/>
+  </g>
+
+  <!-- 连接线形成六边形 -->
+  <polygon points="200,92 285,152 285,248 200,308 115,248 115,152"
+           fill="none" stroke="#e2e8f0" stroke-width="2" opacity="0.5"/>
+
+  <!-- 中心文字 -->
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="48" font-weight="bold"
+        fill="#ffffff" text-anchor="middle">612</text>
+
+  <!-- GEO文字 -->
+  <text x="200" y="230" font-family="Arial, sans-serif" font-size="36" font-weight="bold"
+        fill="#48bb78" text-anchor="middle">GEO</text>
+
+  <!-- 装饰性点 - 123顺序 -->
+  <g fill="#4299e1" opacity="0.8">
+    <circle cx="180" cy="245" r="4"/>
+    <circle cx="193" cy="245" r="4"/>
+    <circle cx="206" cy="245" r="4"/>
+  </g>
+
+  <!-- 底部文字 -->
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="bold"
+        fill="#a0aec0" text-anchor="middle" letter-spacing="3">TEAM</text>
+</svg>
