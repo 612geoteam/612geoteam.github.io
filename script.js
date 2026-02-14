@@ -133,7 +133,7 @@ function copyEmail() {
 }
 
 // Consultation Modal Functions
-var CONSULT_API_URL = 'https://wp.acfunc.online/wp-json/geo612/v1/consultation';
+var CONSULT_API_URL = 'https://godance.cloverphp.top/wp-json/geo612/v1/consultation';
 
 function openConsultModal(planName) {
     var modal = document.getElementById('consultModal');

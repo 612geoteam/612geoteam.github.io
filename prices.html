@@ -23,22 +23,23 @@
         "offers": [
             {
                 "@type": "Offer",
-                "name": "品牌SEO/GEO诊断",
-                "price": "199",
-                "priceCurrency": "CNY"
-            },
-            {
-                "@type": "Offer",
-                "name": "612定制官网建设",
-                "price": "1999",
-                "priceCurrency": "CNY"
-            },
-            {
-                "@type": "Offer",
-                "name": "长期内容维护",
-                "price": "612",
+                "name": "基础GEO套餐",
+                "price": "299",
                 "priceCurrency": "CNY",
                 "unitText": "月"
+            },
+            {
+                "@type": "Offer",
+                "name": "高级GEO套餐",
+                "price": "599",
+                "priceCurrency": "CNY",
+                "unitText": "月"
+            },
+            {
+                "@type": "Offer",
+                "name": "独立官网建设",
+                "price": "1299",
+                "priceCurrency": "CNY"
             }
         ]
     }
@@ -98,7 +99,7 @@
                 </div>
                         
                 <!-- Price Table -->
-                <div style="max-width: 1200px; margin: 0 auto; background: var(--bg-card); border-radius: 24px; border: 1px solid var(--glass-border); overflow: hidden;">
+                <div id="basic-plan" style="max-width: 1200px; margin: 0 auto; background: var(--bg-card); border-radius: 24px; border: 1px solid var(--glass-border); overflow: hidden;">
                     <table style="width: 100%; border-collapse: collapse;">
                         <thead>
                             <tr style="background: rgba(59, 130, 246, 0.1);">
@@ -147,46 +148,29 @@
                                 <td style="padding: 1.5rem; text-align: center; font-size: 0.95rem; color: var(--text-muted); border-right: 1px solid var(--glass-border);">中大型企业</td>
                                 <td style="padding: 1.5rem; text-align: center; font-size: 0.95rem; color: var(--text-muted);">所有需要建站的客户</td>
                             </tr>
+                            <tr style="background: rgba(255, 255, 255, 0.03);">
+                                <td style="padding: 1.5rem; font-weight: 600; color: #fff; border-right: 1px solid var(--glass-border);">联系购买</td>
+                                <td style="padding: 1.5rem; text-align: center; border-right: 1px solid var(--glass-border);">
+                                    <button class="btn btn-s" onclick="openContactModal()" style="padding: 0.75rem 1.5rem; font-size: 1rem;">立即联系</button>
+                                </td>
+                                <td style="padding: 1.5rem; text-align: center; border-right: 1px solid var(--glass-border);">
+                                    <button class="btn btn-s" onclick="openContactModal()" style="padding: 0.75rem 1.5rem; font-size: 1rem;">立即联系</button>
+                                </td>
+                                <td style="padding: 1.5rem; text-align: center;">
+                                    <button class="btn btn-s" onclick="openContactModal()" style="padding: 0.75rem 1.5rem; font-size: 1rem;">立即联系</button>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
                         
-                <!-- Package Recommendation -->
-                <div style="max-width: 1000px; margin: 3rem auto 0;">
-                    <div class="sec-header">
-                        <h3>推荐组合方案</h3>
-                        <p>官网+GEO服务组合购买更优惠</p>
-                    </div>
-                    <div class="card-grid">
-                        <div class="price-card" style="text-align: center;">
-                            <h4>基础组合方案</h4>
-                            <div style="margin: 1rem 0;">
-                                <span style="font-size: 2rem; font-weight: 800; color: var(--secondary);">¥1598</span>
-                                <span style="color: var(--text-muted); margin-left: 0.5rem;">首月</span>
-                            </div>
-                            <div style="margin: 1rem 0; color: var(--text-muted); font-size: 1.1rem;">
-                                后续每月 <span style="color: var(--secondary); font-weight: 700;">¥299</span>
-                            </div>
-                            <p style="color: var(--text-muted); margin: 1rem 0;">基础GEO套餐 + 官网建设</p>
-                            <button class="btn btn-s" onclick="openConsultModal('基础组合方案')" style="margin-top: 1rem;">立即咨询</button>
-                        </div>
-                        <div class="price-card" style="text-align: center;">
-                            <h4>全面组合方案</h4>
-                            <div style="margin: 1rem 0;">
-                                <span style="font-size: 2rem; font-weight: 800; color: var(--secondary);">¥1898</span>
-                                <span style="color: var(--text-muted); margin-left: 0.5rem;">首月</span>
-                            </div>
-                            <div style="margin: 1rem 0; color: var(--text-muted); font-size: 1.1rem;">
-                                后续每月 <span style="color: var(--secondary); font-weight: 700;">¥599</span>
-                            </div>
-                            <p style="color: var(--text-muted); margin: 1rem 0;">高级GEO套餐 + 官网建设</p>
-                            <button class="btn btn-s" onclick="openConsultModal('全面组合方案')" style="margin-top: 1rem;">立即咨询</button>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
 
+        <!-- Premium Plan Anchor -->
+        <div id="premium-plan" style="height: 1px;"></div>
+        
         <!-- FAQ -->
         <section class="section section-dark">
             <div class="container" style="max-width: 800px;">
@@ -202,10 +186,7 @@
                         <h4 style="margin-bottom: 0.5rem; color: #fff;">你们的官网建设有什么特色？</h4>
                         <p>我们采用WordPress轻量开发，专门针对SEO优化设计，包含域名注册、备案协助和首年服务器托管，让您省心省力。</p>
                     </div>
-                    <div class="feature-card" style="align-items: flex-start; text-align: left; padding: 2rem;">
-                        <h4 style="margin-bottom: 0.5rem; color: #fff;">效果不满意可以退款吗？</h4>
-                        <p>我们承诺透明服务。如果连续两个月未达到预期效果，您可以随时取消服务。组合套餐客户可申请部分退款。</p>
-                    </div>
+
                     <div class="feature-card" style="align-items: flex-start; text-align: left; padding: 2rem;">
                         <h4 style="margin-bottom: 0.5rem; color: #fff;">可以按季度或年度付费吗？</h4>
                         <p>可以。季度付费享受5%优惠，年度付费享受10%优惠。组合套餐客户还有额外惊喜折扣。</p>
