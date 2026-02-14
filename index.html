@@ -27,7 +27,7 @@
       "alternateName": ["612GEO", "612 GEO Team"],
       "url": "https://612geoteam.github.io/",
       "logo": "https://612geoteam.github.io/logo.png",
-      "description": "612GEO团队是一家扎根广州的数字营销服务团队，专注于SEO搜索引擎优化、GEO生成式引擎优化与企业官网建设，帮助品牌在百度、DeepSeek、豆包等平台获得可见性。",
+      "description": "612GEO团队是6人的技术服务小组，专注SEO优化、GEO生成式引擎优化与企业官网建设，以实在的价格提供靠谱的服务。",
       "email": "340058663@qq.com",
       "areaServed": {
         "@type": "Country",
@@ -43,9 +43,24 @@
       "knowsAbout": ["SEO", "GEO", "搜索引擎优化", "生成式引擎优化", "企业官网建设", "AI搜索优化", "DeepSeek优化"]
     }
     </script>
+    
+    <!-- 面包屑导航结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://612geoteam.github.io/"
+      }]
+    }
+    </script>
 
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./logo.png" type="image/png">
+    <link rel="preload" href="./logo.png" as="image">
     <script src="./lucide.js"></script>
 
     <!-- Google Tag (Keep existing) -->
@@ -67,7 +82,7 @@
     <nav class="nav">
         <div class="container nav-wrap">
             <a href="./" class="logo-wrap">
-                <img src="./logo.png" alt="612GEO Logo" width="36" height="36">
+                <img src="./logo.png" alt="612GEO团队Logo - 专注SEO/GEO优化" width="36" height="36" loading="lazy">
                 <span>612GEO团队</span>
             </a>
             <ul class="nav-links">
@@ -91,7 +106,7 @@
         <header id="hero" class="hero">
             <div class="container">
                 <div class="hero-tag">
-                    <i data-lucide="infinity" size="16"></i> 企业长期推广 · 持续增长引擎
+                    <i data-lucide="users" size="16"></i> 6人技术小组 · 实在靠谱
                 </div>
                 <h1>
                     <span>不只是被搜到</span><br />
@@ -101,8 +116,8 @@
                     用户在百度搜，在 DeepSeek 问，在豆包聊——流量入口已经变了。612GEO团队用<strong>"官网 + 内容 + SEO/GEO"</strong>订阅制，让品牌同时出现在搜索结果和 AI 回答里。
                 </p>
                 <div class="hero-actions">
-                    <a href="./prices.html" class="btn btn-p">查看订阅方案</a>
-                    <button class="btn btn-s" onclick="openContactModal()">免费诊断咨询</button>
+                    <a href="./prices.html" class="btn btn-p">查看服务价格</a>
+                    <button class="btn btn-s" onclick="openContactModal()">免费初步沟通</button>
                 </div>
             </div>
         </header>
@@ -184,7 +199,39 @@
             </div>
         </section>
 
-        <!-- Team (Simplified) -->
+        <!-- Simple Stats -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="sec-header">
+                    <h2>我们能做到什么</h2>
+                    <p>实实在在的服务能力</p>
+                </div>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <span class="kpi-val">几十</span>
+                        <span class="kpi-txt">服务过的客户</span>
+                        <span class="kpi-desc">主要是中小企业和个体商户</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-val">几周</span>
+                        <span class="kpi-txt">项目周期</span>
+                        <span class="kpi-desc">根据实际情况合理安排</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-val">几百</span>
+                        <span class="kpi-txt">原创内容</span>
+                        <span class="kpi-desc">用心写的实用型文章</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-val">及时</span>
+                        <span class="kpi-txt">沟通响应</span>
+                        <span class="kpi-desc">微信随时联系，有问必答</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team (Enhanced) -->
         <section class="section">
             <div class="container">
                 <div class="sec-header">
@@ -206,6 +253,30 @@
                         <span class="team-icon-large">📈</span>
                         <h3>增长运营</h3>
                         <p>专注 SEO/GEO 数据分析、策略制定与效果跟踪。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Honest Approach -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="sec-header">
+                    <h2>我们的态度</h2>
+                    <p>坦诚相待，实事求是</p>
+                </div>
+                <div class="card-grid">
+                    <div class="feature-card" style="text-align: left;">
+                        <h3 style="margin-bottom: 1rem; color: #fff;">不做虚假承诺</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">我们不会保证排名一定到第一页，也不会承诺一定能带来多少流量。效果因行业、竞争程度而异，但我们会尽最大努力做好每个环节。</p>
+                    </div>
+                    <div class="feature-card" style="text-align: left;">
+                        <h3 style="margin-bottom: 1rem; color: #fff;">价格实在透明</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">我们是小团队运作，没有高昂的运营成本，所以能给到很实在的价格。所有服务明码标价，无隐藏费用。</p>
+                    </div>
+                    <div class="feature-card" style="text-align: left;">
+                        <h3 style="margin-bottom: 1rem; color: #fff;">沟通简单直接</h3>
+                        <p style="color: var(--text-muted); line-height: 1.7;">微信直接联系，有事说事，不搞复杂流程。项目进度随时同步，有问题随时提出，我们一起想办法解决。</p>
                     </div>
                 </div>
             </div>
