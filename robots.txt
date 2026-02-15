@@ -1,110 +1,40 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://612geoteam.github.io/sitemap.xml
+Sitemap: https://geo.cloverphp.top/sitemap.xml
 
-# Crawl-delay for polite crawling
-Crawl-delay: 1
-
-# ==================== 传统搜索引擎 ====================
+# 屏蔽 Google
 User-agent: Googlebot
-Allow: /
+Disallow: /
 
+# Bing
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
-User-agent: msnbot
-Allow: /
-Crawl-delay: 1
-
+# Baidu
 User-agent: Baiduspider
 Allow: /
-Crawl-delay: 1
 
-User-agent: Sogou web spider
-Allow: /
-
-User-agent: 360Spider
-Allow: /
-
-User-agent: YisouSpider
-Allow: /
-
+# Apple
 User-agent: Applebot
 Allow: /
 
-User-agent: Yandex
-Allow: /
-
-# ==================== AI 搜索引擎爬虫 ====================
-# DeepSeek
-User-agent: Deepseekbot
-Allow: /
-
-# 字节跳动豆包/Coze
-User-agent: Bytespider
-Allow: /
-
-# OpenAI ChatGPT
+# AI Crawlers
 User-agent: GPTBot
 Allow: /
 
-User-agent: ChatGPT-User
-Allow: /
-
-# Anthropic Claude
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-# Google Bard/Gemini
-User-agent: Google-Extended
-Allow: /
-
-# Microsoft Copilot
-User-agent: Copilot
-Allow: /
-
-# Perplexity AI
 User-agent: PerplexityBot
 Allow: /
 
-# Meta AI
-User-agent: Meta-ExternalAgent
+User-agent: Deepseekbot
 Allow: /
 
-User-agent: FacebookBot
+User-agent: anthropic-ai
 Allow: /
 
-# Cohere
-User-agent: cohere-ai
-Allow: /
-
-# Amazon
-User-agent: Amazonbot
-Allow: /
-
-# Apple Intelligence
-User-agent: Applebot-Extended
-Allow: /
-
-# ==================== 屏蔽恶意爬虫 ====================
+# 屏蔽 SEO 工具
 User-agent: AhrefsBot
 Disallow: /
 
 User-agent: SemrushBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: BLEXBot
 Disallow: /
